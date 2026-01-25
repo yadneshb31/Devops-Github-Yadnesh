@@ -11,8 +11,3 @@ How are you?
 7
 
 8
-<<<<<<< HEAD
-10
-=======
-9
->>>>>>> 8f917ed7dfb5fdcd8b999c49910e9ebbfe9b1936
