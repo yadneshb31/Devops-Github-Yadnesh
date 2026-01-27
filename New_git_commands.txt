@@ -1,0 +1,94 @@
+cool-git-commands
+All cool git commands that can saves you time and maybe your life. :)
+
+
+ git reflog : 
+It shows all the previous commits you've made in your repo. It can be useful when you wants to reverts your work to a previous state.
+
+ Git standup :  
+Lists all your yesterday's commits. The downside is its doesn't come with every git client. So you have to install it. Follow the guide here to install.
+
+ Git reset --hard  : 
+This can be a lifesaver when you've made a mistake in your repo and decided to reverts your repo to the previous state. Just use Git reset --hard . First of all you have to use Git reflog or Git standup to get the SHA1 of the commits you wanted to revert your repo to.
+
+ Git add . : 
+So , you've made changes to several files on your local repo and you want to stage them all for commits. Instead of looking for all the files you made changes to before you commits. You can just use git add . to add all those files at once instead of adding them one by one.
+
+ Git Stash : 
+It takes all of the staged changes and stores them away somewhere. It can be helpful when you don't want to push particular changes yet and still don't want to delete them.
+
+ Git stash pop : 
+This command retrieved the stored changes that you git stash
+
+ git commit --amend :  
+Let say you made a typo in your commit message you can use it to change the message instead of making a new commit all over again.
+
+
+ git blame : 
+If you want to play the blame game this command comes handy. It shows the particular changes made to files , the name of the author and the time they made it.In case a person has broken any of your features you can go ahead and YELL at the person who made those mistakes.
+
+ git commit -am 'your commit message' : 
+This command let you add and commit your changes in a single command
+
+ git fetch :
+Fetches all the objects from the remote repository that are not present in the local one. Example: git fetch origin.
+
+ git pull :
+Fetches the files from the remote repository and merges it with your local one. This command is equal to the git fetch and the git merge sequence. Example: git pull origin.
+
+ git push :
+Pushes all the modified local objects to the remote repository and advances its branches. Example: git push origin master.
+
+ git prune :
+Removes objects that are no longer pointed to by any object in any reachable branch. Example: git prune.
+
+ git archive :
+Creates a tar or zip file including the contents of a single tree from your repository.
+
+ git gc :
+Garbage collector for your repository. Optimizes your repository. Should be run occasionally.
+
+ git instaweb :
+Runs a web server with an interface into your local repository and automatically directs a web browser to it.
+
+ git diff :
+Generates patch files or statistics of differences between paths or files in your git repository, or your index or your working directory.
+
+ git grep :
+Lets you search through your trees of content for words and phrases. Example: git grep "www.siteground.com" --
+
+ git ls-tree :
+Shows a tree object, including the mode and the name of each item and the SHA-1 value of the blob or the tree that it points to.
+
+ git show :
+Shows information about a git object.
+
+ git remote :
+Shows all the remote versions of your repository. Example: git remote origin
+
+ git merge :
+Merges one or more branches into your current branch and automatically creates a new commit if there are no conflicts.
+
+ git checkout :
+Checks out a different branch – switches branches by updating the index, working tree, and HEAD to reflect the chosen branch. Example: git checkout newbranch
+
+ git branch :
+Lists existing branches, including remote branches if ‘-a’ is provided. Creates a new branch if a branch name is provided.
+
+ git status :
+Shows you the status of files in the index versus the working directory. It will list out files that are untracked (only in your working directory), modified (tracked but not yet updated in your index), and staged (added to your index and ready for committing).
+
+ git init :
+Initializes a git repository – creates the initial ‘.git’ directory in a new or in an existing project.
+
+ git clone :
+Makes a Git repository copy from a remote source. Also adds the original location as a remote so you can fetch from it again and push to it if you have permissions.
+
+ git rm :
+Removes files from your index and your working directory so they will not be tracked.
+
+ git tag :
+Tags a specific commit with a simple, human readable handle that never moves. Example: git tag -a v1.0 -m 'this is version 1.0 tag'.
+
+ git remote add :
+This command let you add your repository url to a project, you are type 'git remote add origin {{your repo url}} to set your repo, to contribute to someone else repo you have to set the remote to theirs 'git remote add upstream {{destination_url}}. To show the list of all the remote added: do 'git remote -v' to remove a remote from the repo, git remote rm {{origin||upstream}}
