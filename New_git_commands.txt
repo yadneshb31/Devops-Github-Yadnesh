@@ -92,3 +92,62 @@ Tags a specific commit with a simple, human readable handle that never moves. Ex
 
  git remote add :
 This command let you add your repository url to a project, you are type 'git remote add origin {{your repo url}} to set your repo, to contribute to someone else repo you have to set the remote to theirs 'git remote add upstream {{destination_url}}. To show the list of all the remote added: do 'git remote -v' to remove a remote from the repo, git remote rm {{origin||upstream}}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git fetch --all --prune
+→ Updates all remote references without changing local code.
+
+git log --oneline --graph --decorate --all
+→ Shows complete commit history with branch structure in a compact view.
+
+git log origin/main..HEAD
+→ Displays commits that exist locally but are not yet pushed to main.
+
+git diff --stat
+→ Shows the size and scope of changes made.
+
+git diff --name-only
+→ Lists only the files that were changed.
+
+git diff main...HEAD
+→ Compares your branch against main to see exact divergence.
+
+git show <commit-hash>
+→ Inspects a specific commit without switching branches.
+
+git blame -w -C -C <file>
+→ Identifies who last modified each line of a file.
+
+git revert <commit-hash>
+→ Safely undoes a commit by creating a new rollback commit.
+
+git stash
+→ Temporarily saves uncommitted changes.
+
+git stash pop
+→ Restores the most recently stashed changes.
+
+git clean -fd
+→ Removes all untracked files and directories.
+
+git gc
+→ Cleans and optimizes the repository storage.
+
+git tag -a vX.Y.Z -m "Production release"
+→ Creates an annotated tag for a release version.
+
+git push origin vX.Y.Z
+→ Pushes a specific release tag to the remote repository.
+
+git sparse-checkout init --cone
+→ Enables partial checkout for large repositories.
+
+git sparse-checkout set <service-name>
+→ Checks out only a specific directory or service.
+
+git clone --depth=1 <repo-url>
+→ Clones only the latest commit to save time and space.
+
+git bisect start
+→ Begins binary search to find the commit that introduced a bug.
